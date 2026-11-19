@@ -53,7 +53,7 @@ export function SiteFooter() {
           <p>
             Regulatory status: TBC. BreadWinners SACCO intends to operate under Uganda’s SACCO
             framework supervised by SASRA. This website is not a licence, a prospectus, or an
-            offer of credit.It a sample desinged by lUQMAN SHADOW 
+            offer of credit.It a sample desinged by LUQMAN SHADOW 
           </p>
           <p>
            
