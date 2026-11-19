@@ -100,7 +100,7 @@ export default function HomePage() {
               </span>
               <span>
                 <span className="block font-heading text-lg font-bold">{feature.title}</span>
-                <span className="mt-1 block text-sm leading-6 text-muted-foreground">{feature.body}</span>
+                <span className="mt-1 block text-base leading-7 text-muted-foreground">{feature.body}</span>
               </span>
             </li>
           ))}
@@ -132,7 +132,7 @@ export default function HomePage() {
             {savings.map((product) => (
               <article key={product.id} className="rounded-3xl bg-card p-5 ring-1 ring-foreground/10">
                 <h3 className="text-xl font-extrabold">{product.name}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{product.summary}</p>
+                <p className="mt-2 text-base leading-7 text-muted-foreground">{product.summary}</p>
               </article>
             ))}
           </div>
@@ -150,16 +150,16 @@ export default function HomePage() {
       <section className="px-4 py-16 sm:px-6">
         <div className="mx-auto grid max-w-6xl items-center gap-8 rounded-3xl bg-primary px-6 py-10 text-primary-foreground md:grid-cols-[1.4fr_0.8fr] md:px-10">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-wheat">Open to everyone</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#f6e7c1]">Open to everyone</p>
             <h2 className="mt-3 text-3xl font-extrabold md:text-5xl">Joining takes about 10 minutes.</h2>
-            <p className="mt-4 max-w-xl text-lg leading-relaxed text-primary-foreground/85">
+            <p className="mt-4 max-w-xl text-lg leading-relaxed text-[#f7f3ea]">
               National ID, NIN, and a joining fee of {site.joiningFee}. No employer restriction.
             </p>
           </div>
           <div className="rounded-3xl bg-[#fffdf8] p-6 text-foreground">
             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-primary">Joining fee</p>
             <p className="mt-2 font-heading text-4xl font-extrabold">{site.joiningFee}</p>
-            <p className="mt-2 text-sm text-muted-foreground">Marked TBC until the board confirms the fee.</p>
+            <p className="mt-2 text-base text-foreground">Marked TBC until the board confirms the fee.</p>
             <Link href="/membership" className={cn(buttonVariants(), "mt-5 h-11 rounded-full px-5")}>
               How to join
             </Link>
@@ -213,7 +213,7 @@ export default function HomePage() {
               </div>
               <div className="p-5">
                 <h3 className="text-2xl font-extrabold">{program.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{program.body}</p>
+                <p className="mt-2 text-base leading-7 text-muted-foreground">{program.body}</p>
               </div>
             </article>
           ))}
@@ -223,7 +223,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24">
         <h2 className="mb-8 max-w-2xl text-3xl font-extrabold md:text-5xl">What members are working toward.</h2>
         <TestimonialCarousel items={getTestimonials()} />
-        <p className="mt-4 text-sm text-muted-foreground">
+        <p className="mt-4 text-base text-foreground">
           These four quotes are written for the layout. They are not statements from real members.
         </p>
       </section>

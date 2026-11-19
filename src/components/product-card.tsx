@@ -26,7 +26,7 @@ export function ProductCard({ product }: { product: LoanProduct }) {
           </div>
           <h3 className="text-2xl font-extrabold">{product.name}</h3>
           <p className="text-base leading-relaxed text-muted-foreground">{product.summary}</p>
-          <ul className="space-y-2 text-sm leading-6">
+          <ul className="space-y-2 text-base leading-7">
             {product.bullets.map((bullet) => (
               <li key={bullet} className="flex gap-2">
                 <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-primary" />

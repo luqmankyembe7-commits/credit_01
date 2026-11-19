@@ -70,7 +70,7 @@
   --destructive: #9c3418;
   --border: #e2d8c6;
   --input: #d9cdb8;
-  --ring: #c48a12;
+  --ring: #145c38;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -88,24 +88,25 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  /* Single light brand. Inverted shadcn tokens made grey text sit on cream. */
+  --background: #f6f1e7;
+  --foreground: #14241c;
+  --card: #fffdf8;
+  --card-foreground: #14241c;
+  --popover: #fffdf8;
+  --popover-foreground: #14241c;
+  --primary: #145c38;
+  --primary-foreground: #f7f3ea;
+  --secondary: #e7f2eb;
+  --secondary-foreground: #145c38;
+  --muted: #efe8da;
+  --muted-foreground: #3e5248;
+  --accent: #f6e7c1;
+  --accent-foreground: #14241c;
+  --destructive: #9c3418;
+  --border: #e2d8c6;
+  --input: #d9cdb8;
+  --ring: #145c38;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -130,7 +131,8 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-base text-foreground;
+    line-height: 1.6;
   }
   h1,
   h2,
@@ -138,6 +140,13 @@
   h4 {
     font-family: var(--font-heading);
     letter-spacing: -0.03em;
+    line-height: 1.15;
+  }
+  p,
+  li,
+  td,
+  dd {
+    overflow-wrap: break-word;
   }
 }
 

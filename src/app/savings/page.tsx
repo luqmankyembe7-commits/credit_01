@@ -41,8 +41,8 @@ export default function SavingsPage() {
             {products.map((product) => (
               <article key={product.id} id={product.id} className="rounded-3xl bg-card p-6 ring-1 ring-foreground/10">
                 <h3 className="text-2xl font-extrabold">{product.name}</h3>
-                <p className="mt-3 text-sm leading-6 text-muted-foreground">{product.summary}</p>
-                <ul className="mt-4 space-y-2 text-sm leading-6">
+                <p className="mt-3 text-base leading-7 text-muted-foreground">{product.summary}</p>
+                <ul className="mt-4 space-y-2 text-base leading-7">
                   {product.bullets.map((bullet) => (
                     <li key={bullet}>{bullet}</li>
                   ))}

@@ -26,7 +26,7 @@ export default function DashboardPage() {
         <MemberSnapshot preview={preview} />
         <aside className="rounded-3xl bg-sage p-6">
           <h2 className="text-xl font-extrabold">Not an account</h2>
-          <p className="mt-3 text-sm leading-6 text-muted-foreground">
+          <p className="mt-3 text-base leading-7 text-muted-foreground">
             Authentication, balances, and loan decisions are not connected. When they are, they
             will be read on the server. A service-role key will not be shipped to the browser.
           </p>

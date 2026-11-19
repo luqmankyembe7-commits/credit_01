@@ -35,7 +35,7 @@ export default function AboutPage() {
           </article>
           <article className="rounded-3xl bg-primary p-6 text-primary-foreground sm:p-8">
             <h3 className="text-2xl font-extrabold">Vision</h3>
-            <p className="mt-3 text-base leading-7 text-primary-foreground/85">
+            <p className="mt-3 text-base leading-7 text-[#f7f3ea]">
               A member list that is not limited to one employer, where dividends, loan limits,
               and welfare payments are written down and easy to check.
             </p>
@@ -47,7 +47,7 @@ export default function AboutPage() {
           {values.map((value) => (
             <article key={value.title} className="rounded-3xl bg-card p-6 ring-1 ring-foreground/10">
               <h3 className="text-xl font-extrabold">{value.title}</h3>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">{value.body}</p>
+              <p className="mt-2 text-base leading-7 text-muted-foreground">{value.body}</p>
             </article>
           ))}
         </div>
@@ -64,7 +64,7 @@ export default function AboutPage() {
               </div>
               <h3 className="mt-4 text-lg font-extrabold">{leader.role}</h3>
               <p className="text-sm font-semibold text-primary">{leader.name}</p>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">{leader.focus}</p>
+              <p className="mt-2 text-base leading-7 text-muted-foreground">{leader.focus}</p>
             </article>
           ))}
         </div>

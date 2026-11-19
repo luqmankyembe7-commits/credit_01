@@ -60,14 +60,14 @@ export function Stat({
         {value}
       </p>
       <h3 className="mt-2 text-lg font-bold">{label}</h3>
-      {detail ? <p className="mt-2 text-sm leading-6 text-muted-foreground">{detail}</p> : null}
+      {detail ? <p className="mt-2 text-base leading-7 text-muted-foreground">{detail}</p> : null}
     </article>
   );
 }
 
 export function PlaceholderNote({ children }: { children: ReactNode }) {
   return (
-    <p className="text-sm leading-6 text-muted-foreground">
+    <p className="text-base leading-7 text-muted-foreground">
       <strong className="font-semibold text-foreground">TBC. </strong>
       {children}
     </p>

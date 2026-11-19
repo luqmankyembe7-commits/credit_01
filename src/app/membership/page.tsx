@@ -40,7 +40,7 @@ export default function MembershipPage() {
                 Step {index + 1}
               </p>
               <h3 className="mt-3 text-2xl font-extrabold">{step.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-muted-foreground">{step.body}</p>
+              <p className="mt-3 text-base leading-7 text-muted-foreground">{step.body}</p>
             </li>
           ))}
         </ol>

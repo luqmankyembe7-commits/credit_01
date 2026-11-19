@@ -18,8 +18,8 @@ import { cn } from "@/lib/utils";
 
 function linkClass(active: boolean) {
   return cn(
-    "inline-flex min-h-11 items-center text-sm font-semibold",
-    active ? "text-primary" : "text-foreground/80 hover:text-foreground"
+    "inline-flex min-h-11 items-center text-base font-semibold",
+    active ? "text-primary" : "text-foreground hover:text-primary"
   );
 }
 

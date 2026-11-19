@@ -14,7 +14,7 @@ export function FaqList({ items }: { items: Faq[] }) {
           <AccordionTrigger className="py-5 text-base font-semibold hover:no-underline">
             {item.question}
           </AccordionTrigger>
-          <AccordionContent className="text-base leading-7 text-muted-foreground">
+          <AccordionContent className="text-base leading-7 text-[#24382e]">
             {item.answer}
           </AccordionContent>
         </AccordionItem>

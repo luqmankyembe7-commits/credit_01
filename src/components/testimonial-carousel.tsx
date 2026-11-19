@@ -29,7 +29,7 @@ export function TestimonialCarousel({ items }: { items: Testimonial[] }) {
         <p className="max-w-3xl text-2xl font-semibold leading-snug text-balance sm:text-4xl">
           “{item.quote}”
         </p>
-        <footer className="mt-6 text-base text-[#f7f3ea]/80">
+        <footer className="mt-6 text-base text-[#e7f0ea]">
           <span className="font-semibold text-[#f7f3ea]">{item.name}</span>
           <span className="mx-2" aria-hidden="true">
             ·
@@ -42,7 +42,7 @@ export function TestimonialCarousel({ items }: { items: Testimonial[] }) {
           type="button"
           variant="outline"
           size="icon-lg"
-          className="rounded-full border-[#f7f3ea]/30 bg-transparent text-[#f7f3ea] hover:bg-[#f7f3ea]/10"
+          className="rounded-full border-[#f6e7c1]! bg-transparent! text-[#f7f3ea]! hover:bg-[#145c38]! hover:text-[#f7f3ea]!"
           onClick={() => step(-1)}
           aria-label="Previous story"
         >
@@ -52,13 +52,13 @@ export function TestimonialCarousel({ items }: { items: Testimonial[] }) {
           type="button"
           variant="outline"
           size="icon-lg"
-          className="rounded-full border-[#f7f3ea]/30 bg-transparent text-[#f7f3ea] hover:bg-[#f7f3ea]/10"
+          className="rounded-full border-[#f6e7c1]! bg-transparent! text-[#f7f3ea]! hover:bg-[#145c38]! hover:text-[#f7f3ea]!"
           onClick={() => step(1)}
           aria-label="Next story"
         >
           <ChevronRight />
         </Button>
-        <p className="ml-2 text-sm text-[#f7f3ea]/70">
+        <p className="ml-2 text-sm text-[#e7f0ea]">
           {index + 1} of {items.length}
         </p>
       </div>

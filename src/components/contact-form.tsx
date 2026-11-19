@@ -79,7 +79,7 @@ export function ContactForm() {
           onChange={(event) => setValues((current) => ({ ...current, name: event.target.value }))}
         />
         {errors.name ? (
-          <p id="name-error" className="text-sm text-destructive">
+          <p id="name-error" className="text-base font-medium text-destructive">
             {errors.name}
           </p>
         ) : null}
@@ -98,7 +98,7 @@ export function ContactForm() {
           onChange={(event) => setValues((current) => ({ ...current, email: event.target.value }))}
         />
         {errors.email ? (
-          <p id="email-error" className="text-sm text-destructive">
+          <p id="email-error" className="text-base font-medium text-destructive">
             {errors.email}
           </p>
         ) : null}
@@ -117,7 +117,7 @@ export function ContactForm() {
           onChange={(event) => setValues((current) => ({ ...current, phone: event.target.value }))}
         />
         {errors.phone ? (
-          <p id="phone-error" className="text-sm text-destructive">
+          <p id="phone-error" className="text-base font-medium text-destructive">
             {errors.phone}
           </p>
         ) : null}
@@ -130,7 +130,7 @@ export function ContactForm() {
           value={values.topic}
           aria-invalid={Boolean(errors.topic)}
           aria-describedby={errors.topic ? "topic-error" : undefined}
-          className="h-11 w-full rounded-lg border border-input bg-transparent px-3 text-base outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+          className="h-11 w-full rounded-lg border border-input bg-card px-3 text-base text-foreground outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
           onChange={(event) => setValues((current) => ({ ...current, topic: event.target.value }))}
         >
           <option value="">Select a topic</option>
@@ -141,7 +141,7 @@ export function ContactForm() {
           ))}
         </select>
         {errors.topic ? (
-          <p id="topic-error" className="text-sm text-destructive">
+          <p id="topic-error" className="text-base font-medium text-destructive">
             {errors.topic}
           </p>
         ) : null}
@@ -159,7 +159,7 @@ export function ContactForm() {
           onChange={(event) => setValues((current) => ({ ...current, message: event.target.value }))}
         />
         {errors.message ? (
-          <p id="message-error" className="text-sm text-destructive">
+          <p id="message-error" className="text-base font-medium text-destructive">
             {errors.message}
           </p>
         ) : null}
@@ -167,7 +167,7 @@ export function ContactForm() {
       <Button type="submit" size="lg" className="h-12 rounded-full px-6 text-base">
         Check message
       </Button>
-      <p className="text-sm leading-6 text-muted-foreground" role="status">
+      <p className="text-base leading-7 text-foreground" role="status">
         {submitted && !values.company
           ? "The form checks out on this device. It was not sent. There is no inbox connected yet."
           : "This form stays in your browser. It does not create an account or send a message."}

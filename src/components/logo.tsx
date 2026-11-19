@@ -42,7 +42,7 @@ export function Logo({
         <span className={cn("block font-heading text-lg font-extrabold tracking-tight", word)}>
           BreadWinners
         </span>
-        <span className={cn("mt-1 block text-[0.65rem] font-semibold uppercase tracking-[0.18em]", sub)}>
+        <span className={cn("mt-1 block text-xs font-semibold uppercase tracking-[0.18em]", sub)}>
           SACCO
         </span>
       </span>

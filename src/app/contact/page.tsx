@@ -28,7 +28,7 @@ export default function ContactPage() {
               <MapPin className="size-5 text-primary" aria-hidden="true" />
               Office
             </h2>
-            <address className="mt-3 text-sm leading-6 text-muted-foreground not-italic">
+            <address className="mt-3 text-base leading-7 text-foreground not-italic">
               {site.address.map((line) => (
                 <span key={line} className="block">
                   {line}
@@ -41,7 +41,7 @@ export default function ContactPage() {
               <Clock className="size-5 text-primary" aria-hidden="true" />
               Hours (TBC)
             </h2>
-            <dl className="mt-3 space-y-2 text-sm">
+            <dl className="mt-3 space-y-2 text-base">
               {site.hours.map((row) => (
                 <div key={row.days} className="flex justify-between gap-4">
                   <dt>{row.days}</dt>
@@ -52,12 +52,12 @@ export default function ContactPage() {
           </article>
           <article className="rounded-3xl bg-card p-6 ring-1 ring-foreground/10">
             <h2 className="text-xl font-extrabold">Reach the office</h2>
-            <p className="mt-3 flex items-center gap-2 text-sm">
+            <p className="mt-3 flex items-center gap-2 text-base">
               <Phone className="size-4 text-primary" aria-hidden="true" />
               <a href={`tel:${site.phoneDisplay.replace(/\s/g, "")}`}>{site.phoneDisplay}</a>
               <span className="text-muted-foreground">TBC</span>
             </p>
-            <p className="mt-2 flex items-center gap-2 text-sm">
+            <p className="mt-2 flex items-center gap-2 text-base">
               <Mail className="size-4 text-primary" aria-hidden="true" />
               <a href={`mailto:${site.email}`}>{site.email}</a>
               <span className="text-muted-foreground">TBC</span>
