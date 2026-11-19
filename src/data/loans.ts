@@ -1,0 +1,88 @@
+import type { LoanProduct } from "@/data/types";
+
+export const loans: LoanProduct[] = [
+  {
+    id: "development",
+    name: "Development Loans",
+    summary:
+      "For a stall, tools, stock, or the next step in a small business.",
+    rateLabel: "from TBC% p.a.",
+    image: "/images/loan-development.jpg",
+    imageAlt:
+      "A woman standing in her produce stall at a Kampala market, with bananas and avocados on the counter",
+    bullets: [
+      "Appraised against your savings record",
+      "Apply online once you have a member number",
+      "Repayment schedule published before you sign (TBC)",
+    ],
+    maximum: "Up to 3× savings (TBC)",
+    term: "TBC",
+    eligibility: "Active member with a savings record. Exact minimums TBC.",
+  },
+  {
+    id: "school-fees",
+    name: "School Fees Loans",
+    summary: "Term-time fees for a member’s child, paid to the school you name.",
+    rateLabel: "from TBC% p.a.",
+    image: "/images/loan-school.jpg",
+    imageAlt: "A graduate in a gown and cap holding a diploma outdoors",
+    bullets: [
+      "School invoice required before disbursement",
+      "Sized from your savings, not from a payslip",
+      "Bursary rules, where they apply, are TBC",
+    ],
+    maximum: "Up to 3× savings (TBC)",
+    term: "TBC",
+    eligibility: "Member in good standing. School invoice required. Thresholds TBC.",
+  },
+  {
+    id: "emergency",
+    name: "Emergency Loans",
+    summary: "A smaller, faster loan when a household bill cannot wait.",
+    rateLabel: "from TBC% p.a.",
+    image: "/images/loan-emergency.jpg",
+    imageAlt: "A woman with a short afro smiling outdoors",
+    bullets: [
+      "Shorter tenor than a development loan",
+      "Decision times will be published (TBC)",
+      "Mobile Money disbursement when the product opens",
+    ],
+    maximum: "Up to 3× savings (TBC)",
+    term: "TBC",
+    eligibility: "Member with cleared prior emergency loans. Limits TBC.",
+  },
+  {
+    id: "agri",
+    name: "Agri-Business Loans",
+    summary: "Seed, labour, and market-day stock for members who farm or trade produce.",
+    rateLabel: "from TBC% p.a.",
+    image: "/images/loan-agri.jpg",
+    imageAlt: "Hands harvesting a cob of maize in a sunlit field in Uganda",
+    imageClassName: "object-left",
+    bullets: [
+      "Season-shaped repayment, details TBC",
+      "Open to farmers and produce traders",
+      "No employer or payroll requirement",
+    ],
+    maximum: "Up to 3× savings (TBC)",
+    term: "TBC",
+    eligibility: "Member. Farming or produce-trade use. Security rules TBC.",
+  },
+  {
+    id: "auto",
+    name: "Auto Loans",
+    summary: "Finance a vehicle you will use for work or family transport.",
+    rateLabel: "from TBC% p.a.",
+    image: "/images/loan-auto.jpg",
+    imageAlt: "A man in a suit seated in a car, speaking on a mobile phone",
+    imageClassName: "object-[72%_center]",
+    bullets: [
+      "New or used vehicles, logbook rules TBC",
+      "Insurance requirements published before offer",
+      "Still limited by your savings multiple",
+    ],
+    maximum: "Up to 3× savings (TBC)",
+    term: "TBC",
+    eligibility: "Member. Vehicle documents required. Exact list TBC.",
+  },
+];
